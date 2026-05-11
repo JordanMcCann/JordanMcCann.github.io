@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan F. McCann — Independent Researcher</title>
+<meta name="description" content="Independent researcher in mechanistic interpretability. Recent work on sandbagging mechanisms, linear deception probes, and single-direction refusal across architectures.">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1e4d8c;
+    --bg: #fafaf7;
+    --rule: #ddd;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    font-weight: 600;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rule);
+    font-weight: 600;
+  }
+  p { margin: 0.75rem 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .paper {
+    margin: 1.5rem 0;
+  }
+  .paper-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .paper-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .paper-summary {
+    margin-top: 0.4rem;
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-list li {
+    margin: 0.4rem 0;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<h1>Jordan F. McCann</h1>
+<p class="role">Independent Researcher · Mechanistic Interpretability</p>
+
+<p>I work on mechanistic interpretability of safety-relevant behaviors in language models. Recent work characterizes the causal substrate of sandbagging and refusal across transformer, hybrid, and state-space architectures, and stress-tests the linear probes commonly used for deception detection. All experiments run on a single RTX 2060.</p>
+
+<h2>Preprints</h2>
+
+<div class="paper">
+  <div class="paper-title">A Rank-1 Suppression Direction Mediates Prompted Sandbagging in Gemma 2 2B IT</div>
+  <div class="paper-meta">Preprint, May 2026 · <a href="papers/mccann2026_l12_sandbagging.pdf">PDF</a></div>
+  <p class="paper-summary">Identifies a rank-1 causal direction at <code>attn_out_L12</code> that recovers +12.5pp sandbag-condition accuracy on test when projected out, with zero honest-capability damage. SVD confirms rank-1 structure; neighborhood geometry and SAE-feature subspace null analyses included.</p>
+</div>
+
+<div class="paper">
+  <div class="paper-title">Linear Deception Probes Detect Correlates, Not Mechanism: Geometric Orthogonality and Adversarial Failure in Gemma 2 2B IT</div>
+  <div class="paper-meta">Preprint, May 2026 · <a href="papers/mccann2026_deception_probes.pdf">PDF</a></div>
+  <p class="paper-summary">Twenty bootstrap-trained logistic-regression probes have cosine 0.016 with the mechanism direction; all three published probe methods drop subrandom on an instruction-following-with-irony category in a sha256-frozen six-category adversarial benchmark, released for community use.</p>
+</div>
+
+<div class="paper">
+  <div class="paper-title">Single-Direction Refusal Across the Architectural Spectrum: Transformer, Hybrid, and Pure State-Space Models</div>
+  <div class="paper-meta">Preprint, May 2026 · <a href="papers/mccann2026_refusal_spectrum.pdf">PDF</a></div>
+  <p class="paper-summary">Extends Arditi et al. 2024 to Zamba2 hybrid (~16% attention) and Falcon-Mamba pure-SSM substrates. Pre-registered architectural-spectrum hypothesis falsified in the opposite direction predicted: hybrid &gt; pure transformer. Bit-exact verified 9-extraction-point hooks released.</p>
+</div>
+
+<div class="paper">
+  <div class="paper-title">Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features</div>
+  <div class="paper-meta">Preprint, May 2026 · <a href="papers/mccann2026_descriptive_collision.pdf">PDF</a></div>
+  <p class="paper-summary">Documents systematic descriptive collision in SAE auto-interpretation pipelines: 38.9% of features in the analyzed corpus are explained by the top-10 most common labels. Quantifies how this undermines downstream interpretability claims that rely on feature labels as ground truth.</p>
+</div>
+
+<h2>Contact</h2>
+
+<ul class="contact-list">
+  <li>Email: <a href="mailto:jordanfmccann@gmail.com">jordanfmccann@gmail.com</a></li>
+  <li>ORCID: <a href="https://orcid.org/YOUR_ORCID_ID">orcid.org/YOUR_ORCID_ID</a></li>
+  <li>GitHub: <a href="https://github.com/jordanfmccann">github.com/jordanfmccann</a></li>
+  <li>LessWrong / Alignment Forum: <a href="https://www.lesswrong.com/users/jordanfmccann">lesswrong.com/users/jordanfmccann</a></li>
+</ul>
+
+<footer>
+Last updated: May 2026.
+</footer>
+
+</body>
+</html>
